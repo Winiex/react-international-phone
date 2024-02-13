@@ -90,10 +90,12 @@ export const FlagImage: React.FC<FlagImageProps> = ({
   }
 
   const getSrc = () => {
-    if (src) return src;
+    if (src) {
+      return src;
+    }
 
     const flagCodepoint = getFlagCodepointByIso2(iso2);
-    return `${protocol}://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/${flagCodepoint}.svg`;
+    return `https://assets.pageuni.com/app/js/twemoji-14.0.2/svg/${flagCodepoint}.svg`;
   };
 
   return (
