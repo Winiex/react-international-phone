@@ -261,7 +261,6 @@ export const CountrySelectorDropdown: React.FC<
       style={{ display: show ? 'block' : 'none', ...styleProps.style }}
       onKeyDown={handleKeyDown}
       onBlur={onClose}
-      tabIndex={-1}
       aria-activedescendant={`react-international-phone__${
         parseCountry(orderedCountries[focusedItemIndex]).iso2
       }-option`}
